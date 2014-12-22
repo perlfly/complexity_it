@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Matteo Piombo - Blog
+title: Complexity - Blog
 ---
 <center>
 <h2> All Blog Posts </h2>
@@ -9,7 +9,7 @@ title: Matteo Piombo - Blog
 {% for post in site.posts %}
 <h3>
  {% if post.tag == "ita" %}
- 	<span class="icon">{% include Flag_of_italy.svg %}</span>
+ 	<span class="icon">{% include Flag_of_Italy.svg %}</span>
  {% endif %}	
  <a href="{{ post.url }}">{{ post.title }}</a>
 </h3>

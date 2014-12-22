@@ -6,7 +6,7 @@ title: Matteo Piombo
 {% for post in site.posts limit:1 %}
 <h3>
  {% if post.tag == "ita" %}
- 	<span class="icon">{% include Flag_of_italy.svg %}</span>
+ 	<span class="icon">{% include Flag_of_Italy.svg %}</span>
  {% endif %}	
  {{ post.title }}
 </h3>
@@ -21,7 +21,7 @@ title: Matteo Piombo
 {% for post in site.posts offset:1 limit:2 %}
 	<h3>
  	{% if post.tag == "ita" %}
- 		<span class="icon">{% include Flag_of_italy.svg %}</span>
+ 		<span class="icon">{% include Flag_of_Italy.svg %}</span>
  	{% endif %}	
  	{{ post.title }}
 	</h3>
