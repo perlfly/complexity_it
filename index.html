@@ -1,0 +1,35 @@
+---
+layout: default
+title: Matteo Piombo
+---
+
+{% for post in site.posts limit:1 %}
+<h3>
+ {% if post.tag == "ita" %}
+ 	<span class="icon">{% include Flag_of_italy.svg %}</span>
+ {% endif %}	
+ {{ post.title }}
+</h3>
+<span>{{ post.date | date: "%d %B %Y" }}</span>
+<div>
+{{ post.content }}
+</div>
+{% endfor %}
+
+<hr>
+
+{% for post in site.posts offset:1 limit:2 %}
+	<h3>
+ 	{% if post.tag == "ita" %}
+ 		<span class="icon">{% include Flag_of_italy.svg %}</span>
+ 	{% endif %}	
+ 	{{ post.title }}
+	</h3>
+		<span>{{ post.date | date: "%d %B %Y" }}</span>
+		<div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
+		<hr>
+{% endfor %}
+
+<h4><a href="{{site.baseurl}}/all-posts.html"> 
+<span class="head-separator"> : </span>  All Blog Posts 
+<span class="head-separator"> : </span>  </a></h4>

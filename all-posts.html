@@ -1,0 +1,19 @@
+---
+layout: default
+title: Matteo Piombo - Blog
+---
+<center>
+<h2> All Blog Posts </h2>
+</center>
+
+{% for post in site.posts %}
+<h3>
+ {% if post.tag == "ita" %}
+ 	<span class="icon">{% include Flag_of_italy.svg %}</span>
+ {% endif %}	
+ <a href="{{ post.url }}">{{ post.title }}</a>
+</h3>
+<span>{{ post.date | date: "%d %B %Y" }}</span>
+<div>{{ post.excerpt  }}</div>
+<hr>
+{% endfor %}
