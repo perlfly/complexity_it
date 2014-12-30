@@ -3,7 +3,7 @@ title: Complexity.it
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Complexity themes
-baseurl: "/complexity_it" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.complexity.it" # the base hostname & protocol for your site
 twitter_username: perlfly
 #github_username:  perlfly
