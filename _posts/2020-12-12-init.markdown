@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Just to begin"
+date:   2020-12-12 12:40:02 +0100
+categories:
+---
+
+Just an initial post to get it right :-)
